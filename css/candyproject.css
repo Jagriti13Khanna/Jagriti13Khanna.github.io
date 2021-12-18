@@ -62,3 +62,73 @@ body {
     	font-size: 2rem;
     }
 }
+
+/* CSS Animation 1 */
+#headingGroup h1 {
+	position: relative;
+	animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count:infinite;
+    animation-name: even-flash;
+}
+
+#headingGroup h1:nth-child(odd) {
+	animation-name: odd-flash;
+}
+
+@keyframes even-flash {
+	0%, 100% {
+		opacity: 0.5;
+		color: #f498b8;
+	}
+	50% {
+		opacity: 0.5;
+		color: #ffffff;
+	}
+}
+
+@keyframes odd-flash {
+	50% {
+		opacity: 0.5;
+		color: #f498b8;
+	}
+	0%, 100% {
+		opacity: 0.5;
+		color: #ffffff;
+	}
+}
+
+/* CSS Animation 2 */
+#rotate-anime {
+	position: relative;
+	animation-name: rotate 5s linear infinite;
+	/* Firefox */
+	-moz-animation: rotate 5s linear infinite;
+	/* WebKit - Chrome and Safari */
+	-webkit-animation: rotate 5s linear infinite;
+	/* Opera */
+	-o-animation: rotate 5s linear infinite;
+	/* general syntax */
+}
+
+/* Firefox */
+@-moz-keyframes rotate {
+	from { -moz-transform: rotate(0deg); }
+	to { -moz-transform: rotate(359deg); }
+ }
+ /* WebKit - Chrome and Safari */
+ @-webkit-keyframes rotate {
+	from { -webkit-transform: rotate(0deg); }
+	to { -webkit-transform: rotate(359deg); }
+ } 
+ /* Opera */
+ @-o-keyframes rotate {
+	from { -o-transform: rotate(0deg); }
+	to { -o-transform: rotate(359deg); }
+ } 
+
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(359deg); }
+ }
+
