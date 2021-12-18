@@ -101,13 +101,13 @@ body {
 /* CSS Animation 2 */
 #rotate-anime {
 	position: relative;
-	animation-name: rotate 5s linear infinite;
+	animation-name: rotate 3s linear infinite;
 	/* Firefox */
-	-moz-animation: rotate 5s linear infinite;
+	-moz-animation: rotate 3s linear infinite;
 	/* WebKit - Chrome and Safari */
-	-webkit-animation: rotate 5s linear infinite;
+	-webkit-animation: rotate 3s linear infinite;
 	/* Opera */
-	-o-animation: rotate 5s linear infinite;
+	-o-animation: rotate 3s linear infinite;
 	/* general syntax */
 }
 
